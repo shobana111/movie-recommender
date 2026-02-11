@@ -15,7 +15,7 @@ def get_recommendations(movie_id):
     data = requests.get(url).json()
     return [movie["title"] for movie in data["results"][:5]]
 
-st.title("🎬 Movie Recommendation App")
+st.title("🎥 My Movie Recommender System")
 
 movie = st.text_input("Enter a movie name")
 
